@@ -1,0 +1,814 @@
+.menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: #00112c;
+    overflow: hidden;
+    z-index: 15;
+    transition: height 0.3s cubic-bezier(.57, .21, .69, 1.25);
+    -webkit-transition: height 0.3s cubic-bezier(.57, .21, .69, 1.25);
+    -moz-transition: height 0.3s cubic-bezier(.57, .21, .69, 1.25);
+    -o-transition: height 0.3s cubic-bezier(.57, .21, .69, 1.25);
+}
+
+.menuCollapse {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 280px;
+    background-color: #00112c;
+    overflow: hidden;
+    z-index: 15;
+    transition: height 0.5s cubic-bezier(.32, 2, .55, .30);
+    -webkit-transition: height 0.5s cubic-bezier(.32, 2, .55, .27);
+    -moz-transition: height 0.5s cubic-bezier(.32, 2, .55, .27);
+    -o-transition: height 0.5s cubic-bezier(.32, 2, .55, .27);
+}
+
+.menuHeader {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #080c25;
+}
+
+.menuClose {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menuCloseInFooter {
+    display: none;
+}
+
+.menuHeaderImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.menuProducBox {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuProductLink {
+    color: #0099e5;
+    font-size: 20px;
+}
+
+.menuProductLinkInFooter {
+    display: none;
+}
+
+.menuProductLink:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.1s font-size;
+}
+
+.menuItems {
+    position: absolute;
+    bottom: 0;
+    right: 13%;
+    width: 68%;
+    height: 100%;
+}
+
+.menuSunLogoBox,
+.menuMercuryLogoBox,
+.menuVenusLogoBox,
+.menuEarthLogoBox,
+.menuMarsLogoBox,
+.menuJupiterLogoBox,
+.menuSaturnLogoBox,
+.menuUranusLogoBox,
+.menuNeptuneLogoBox {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.menuSunLogoBox {
+    top: 20%;
+    right: 12%;
+}
+
+.menuMercuryLogoBox {
+    top: 45%;
+    right: 12%;
+}
+
+.menuVenusLogoBox {
+    top: 70%;
+    right: 12%;
+}
+
+.menuEarthLogoBox {
+    top: 20%;
+    right: 38%;
+}
+
+.menuMarsLogoBox {
+    top: 45%;
+    right: 38%;
+}
+
+.menuJupiterLogoBox {
+    top: 70%;
+    right: 38%;
+}
+
+.menuSaturnLogoBox {
+    top: 20%;
+    right: 65%;
+}
+
+.menuUranusLogoBox {
+    top: 45%;
+    right: 65%;
+}
+
+.menuNeptuneLogoBox {
+    top: 70%;
+    right: 65%;
+}
+
+.menuSunLink:hover,
+.menuMercuryLink:hover,
+.menuVenusLink:hover,
+.menuEarthLink:hover,
+.menuMarsLink:hover,
+.menuJupiterLink:hover,
+.menuSaturnLink:hover,
+.menuUranusLink:hover,
+.menuNeptuneLink:hover {
+    transform: scaleY(1.2);
+    -webkit-transform: scaleY(1.2);
+    -moz-transform: scaleY(1.2);
+    -o-transform: scaleY(1.2);
+    transform: scaleX(1.2);
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+}
+
+.menuSunLogoBox:hover .menuSunLogo,
+.menuMercuryLogoBox:hover .menuMercuryLogo,
+.menuVenusLogoBox:hover .menuVenusLogo,
+.menuEarthLogoBox:hover .menuEarthLogo,
+.menuMarsLogoBox:hover .menuMarsLogo,
+.menuJupiterLogoBox:hover .menuJupiterLogo,
+.menuSaturnLogoBox:hover .menuSaturnLogo,
+.menuUranusLogoBox:hover .menuUranusLogo,
+.menuNeptuneLogoBox:hover .menuNeptuneLogo {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transition: 0.5s all ease;
+}
+
+.menuSunLogo,
+.menuMercuryLogo,
+.menuVenusLogo,
+.menuEarthLogo,
+.menuMarsLogo,
+.menuJupiterLogo,
+.menuUranusLogo,
+.menuNeptuneLogo {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.menuSaturnLogo {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.menuSunLink,
+.menuMercuryLink,
+.menuVenusLink,
+.menuEarthLink,
+.menuMarsLink,
+.menuJupiterLink,
+.menuSaturnLink,
+.menuUranusLink,
+.menuNeptuneLink {
+    color: #fff;
+    font-size: 16px;
+}
+
+.menuSunLink:hover,
+.menuMercuryLink:hover,
+.menuVenusLink:hover,
+.menuEarthLink:hover,
+.menuMarsLink:hover,
+.menuJupiterLink:hover,
+.menuSaturnLink:hover,
+.menuUranusLink:hover,
+.menuNeptuneLink:hover {
+    text-decoration: none;
+}
+
+.menuFooter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 220px;
+    height: 100%;
+}
+
+.menuVector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.solarLogo {
+    position: absolute;
+    bottom: 30%;
+    right: 20%;
+    width: 100px;
+    height: 100px;
+}
+
+.menuHomePageLink {
+    position: absolute;
+    top: 10%;
+    right: 22%;
+    font-size: 20px;
+    color: #2dde98;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.menuHomePageLink:hover {
+    text-decoration: none;
+    color: rgb(119, 95, 224);
+    font-size: 21px;
+    transition: 0.1s font-size;
+}
+
+.loginRegisterBox {
+    position: absolute;
+    bottom: 5%;
+    right: 22%;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.menuLoginLink {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 7px 14px;
+    outline: none;
+    border: none;
+    border-radius: 31% 69% 41% 59% / 51% 30% 70% 49%;
+    transition: 0.1s border-radius ease;
+    -webkit-transition: 0.1s border-radius ease;
+    -moz-transition: 0.1s border-radius ease;
+    -o-transition: 0.1s border-radius ease;
+}
+
+.menuLoginLink:hover {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 45% 24% 49% 48% / 33% 47% 33% 34%;
+}
+
+.menuLogOutButton {
+    background-color: #992a2a;
+    color: #fff;
+    padding: 7px 14px;
+    outline: none;
+    border: none;
+    border-radius: 40% 13% 56% 44% / 35% 59% 39% 24%;
+    transition: 0.1s border-radius ease;
+    -webkit-transition: 0.1s border-radius ease;
+    -moz-transition: 0.1s border-radius ease;
+    -o-transition: 0.1s border-radius ease;
+}
+
+.menuLogOutButton:hover {
+    border-radius: 30% 70% 55% 45% / 53% 30% 70% 47%;
+}
+
+
+/* media queries ////////////////////// */
+
+@media screen and (max-width: 2200px) {
+    .menuHeader {
+        width: 330px;
+    }
+    .menuHeaderImage {
+        height: 100%;
+        transform: rotateZ(90deg);
+    }
+    .menuProducBox {
+        bottom: 12%;
+    }
+    .menuProductLink {
+        font-size: 22px;
+    }
+    .menuProductLink:hover {
+        font-size: 24px;
+    }
+    .menuItems {
+        right: 16%;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 300px;
+    }
+    .solarLogo {
+        right: 28%;
+    }
+    .menuHomePageLink {
+        right: 30%;
+    }
+    .loginRegisterBox {
+        right: 30%;
+    }
+}
+
+@media screen and (max-width: 2099px) {
+    .menuItems {
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 1655px) {
+    .menuItems {
+        right: 14%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .menuHeader {
+        width: 270px;
+    }
+    .menuHeaderImage {
+        height: 100%;
+        transform: rotateZ(90deg);
+    }
+    .menuItems {
+        right: 13%;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 270px;
+    }
+    .solarLogo {
+        right: 26%;
+    }
+    .menuHomePageLink {
+        right: 28%;
+    }
+    .loginRegisterBox {
+        right: 28%;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .menuHeader {
+        width: 220px;
+    }
+    .menuHeaderImage {
+        height: 100%;
+        height: 90%;
+        transform: none;
+    }
+    .menuItems {
+        right: 11%;
+    }
+    .menuProductLink {
+        font-size: 20px;
+    }
+    .menuProductLink:hover {
+        font-size: 22px;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 220px;
+    }
+    .solarLogo {
+        right: 20%;
+    }
+    .menuHomePageLink {
+        right: 22%;
+    }
+    .loginRegisterBox {
+        right: 22%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menuHeader {
+        width: 180px;
+    }
+    .menuSunLogoBox,
+    .menuMercuryLogoBox,
+    .menuVenusLogoBox,
+    .menuEarthLogoBox,
+    .menuMarsLogoBox,
+    .menuJupiterLogoBox,
+    .menuSaturnLogoBox,
+    .menuUranusLogoBox,
+    .menuNeptuneLogoBox {
+        width: 140px;
+    }
+    .menuItems {
+        right: 14%;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 180px;
+    }
+    .solarLogo {
+        right: 16%;
+    }
+    .menuHomePageLink {
+        right: 18%;
+    }
+    .loginRegisterBox {
+        right: 18%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .menuHeader {
+        width: 150px;
+    }
+    .menuHeaderImage {
+        height: 80%;
+    }
+    .menuItems {
+        right: 13%;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 150px;
+    }
+    .solarLogo {
+        right: 18%;
+        width: 80px;
+        height: 80px;
+    }
+    .menuHomePageLink {
+        top: 20%;
+        right: 14%;
+    }
+    .loginRegisterBox {
+        right: 14%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .menuHeader {
+        display: none;
+    }
+    .menuHeaderImage {
+        display: none;
+    }
+    .menuCloseInFooter {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 25px;
+        height: 25px;
+    }
+    .menuHomePageLink {
+        font-size: 18px;
+        right: 19%;
+        top: 10%;
+    }
+    .menuProductLinkInFooter {
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 26%;
+        z-index: 1;
+        font-size: 17px;
+    }
+    .menuItems {
+        right: 23%;
+    }
+    .menuVector,
+    .menuFooter {
+        width: 175px;
+    }
+    .solarLogo {
+        right: 22%;
+    }
+    .menuHomePageLink {
+        right: 21%;
+    }
+    .loginRegisterBox {
+        right: 20%;
+    }
+    .menuLoginLink,
+    .menuRegisterLink {
+        font-size: 14px;
+    }
+    .menuLoginRegisterSpan {
+        font-size: 20px;
+    }
+    .menuSunLogoBox {
+        top: 20%;
+        right: 5%;
+    }
+    .menuMercuryLogoBox {
+        top: 45%;
+        right: 5%;
+    }
+    .menuVenusLogoBox {
+        top: 70%;
+        right: 5%;
+    }
+    .menuEarthLogoBox {
+        top: 20%;
+        right: 40%;
+    }
+    .menuMarsLogoBox {
+        top: 45%;
+        right: 40%;
+    }
+    .menuJupiterLogoBox {
+        top: 70%;
+        right: 40%;
+    }
+    .menuSaturnLogoBox {
+        top: 20%;
+        right: 75%;
+    }
+    .menuUranusLogoBox {
+        top: 45%;
+        right: 75%;
+    }
+    .menuNeptuneLogoBox {
+        top: 70%;
+        right: 75%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .menuCollapse {
+        height: 240px;
+    }
+    .menuItems {
+        right: 20%;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 140px;
+    }
+    .solarLogo {
+        right: 21%;
+        width: 70px;
+        height: 70px;
+    }
+    .menuHomePageLink {
+        right: 18%;
+    }
+    .menuProductLinkInFooter {
+        right: 23%;
+    }
+    .loginRegisterBox {
+        right: 15%;
+    }
+    .menuSunLogo,
+    .menuMercuryLogo,
+    .menuVenusLogo,
+    .menuEarthLogo,
+    .menuMarsLogo,
+    .menuJupiterLogo,
+    .menuUranusLogo,
+    .menuNeptuneLogo {
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+    }
+    .menuSaturnLogo {
+        width: 35px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .menuSunLink,
+    .menuMercuryLink,
+    .menuVenusLink,
+    .menuEarthLink,
+    .menuMarsLink,
+    .menuJupiterLink,
+    .menuSaturnLink,
+    .menuUranusLink,
+    .menuNeptuneLink {
+        color: #fff;
+        font-size: 14px;
+    }
+    .menuSunLogoBox {
+        top: 20%;
+        right: 10%;
+    }
+    .menuMercuryLogoBox {
+        top: 45%;
+        right: 10%;
+    }
+    .menuVenusLogoBox {
+        top: 70%;
+        right: 10%;
+    }
+    .menuEarthLogoBox {
+        top: 20%;
+        right: 40%;
+    }
+    .menuMarsLogoBox {
+        top: 45%;
+        right: 40%;
+    }
+    .menuJupiterLogoBox {
+        top: 70%;
+        right: 40%;
+    }
+    .menuSaturnLogoBox {
+        top: 20%;
+        right: 70%;
+    }
+    .menuUranusLogoBox {
+        top: 45%;
+        right: 70%;
+    }
+    .menuNeptuneLogoBox {
+        top: 70%;
+        right: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menuItems {
+        right: 28%;
+    }
+    .menuSunLogoBox {
+        top: 5%;
+        right: 10%;
+    }
+    .menuMercuryLogoBox {
+        top: 22%;
+        right: 10%;
+    }
+    .menuVenusLogoBox {
+        top: 40%;
+        right: 10%;
+    }
+    .menuEarthLogoBox {
+        top: 58%;
+        right: 10%;
+    }
+    .menuMarsLogoBox {
+        top: 75%;
+        right: 10%;
+    }
+    .menuJupiterLogoBox {
+        top: 12%;
+        right: 50%;
+    }
+    .menuSaturnLogoBox {
+        top: 30%;
+        right: 50%;
+    }
+    .menuUranusLogoBox {
+        top: 48%;
+        right: 50%;
+    }
+    .menuNeptuneLogoBox {
+        top: 66%;
+        right: 50%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menuCollapse {
+        height: 360px;
+    }
+    .menuFooter {
+        height: 65%;
+    }
+    .menuVector {
+        width: 140px;
+    }
+    .menuSunLogoBox {
+        top: 6%;
+        right: -45%;
+    }
+    .menuEarthLogoBox {
+        top: 17%;
+        right: -45%;
+    }
+    .menuMercuryLogoBox {
+        top: 5%;
+        right: 20%;
+    }
+    .menuVenusLogoBox {
+        top: 17%;
+        right: 20%;
+    }
+    .menuMarsLogoBox {
+        top: 31%;
+        right: 20%;
+    }
+    .menuJupiterLogoBox {
+        top: 44%;
+        right: 20%;
+    }
+    .menuSaturnLogoBox {
+        top: 57%;
+        right: 20%;
+    }
+    .menuUranusLogoBox {
+        top: 70%;
+        right: 20%;
+    }
+    .menuNeptuneLogoBox {
+        top: 82%;
+        right: 20%;
+    }
+    .menuCloseInFooter {
+        top: -54%;
+        right: 3%;
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+    .menu {
+        max-width: 2200px;
+        right: auto;
+    }
+    .menuCollapse {
+        max-width: 2200px;
+        right: auto;
+    }
+    .menuHeader {
+        width: 330px;
+    }
+    .menuHeaderImage {
+        height: 100%;
+        transform: rotateZ(90deg);
+    }
+    .menuProducBox {
+        bottom: 12%;
+    }
+    .menuProductLink {
+        font-size: 22px;
+    }
+    .menuProductLink:hover {
+        font-size: 24px;
+    }
+    .menuItems {
+        right: 16%;
+    }
+    .menuFooter,
+    .menuVector {
+        width: 300px;
+    }
+    .solarLogo {
+        right: 28%;
+    }
+    .menuHomePageLink {
+        right: 30%;
+    }
+    .loginRegisterBox {
+        right: 30%;
+    }
+}

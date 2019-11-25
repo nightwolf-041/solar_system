@@ -1,0 +1,171 @@
+.planetSpecificationLtrMainBox {
+    direction: ltr;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    background-blend-mode: hard-light;
+    background-image: url('../../../assets/images/backgrounds/background.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.planetSpecificateLtrBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.planetSpecificateLtrDescs {
+    position: relative;
+    width: auto;
+    max-width: 790px;
+    height: auto;
+    padding: 30px;
+    background-color: #283593;
+    /* background-color: #16214d; */
+}
+
+.planetSpecificateLtrTitle {
+    text-align: right;
+    color: #01cd74;
+    font-size: 24px;
+    direction: rtl;
+    padding-bottom: 10px;
+}
+
+.planetSpecificateLtrPara {
+    text-align: right;
+    color: #fff;
+    font-size: 18px;
+    direction: rtl;
+}
+
+.planetSpecificateLtrImage {
+    width: 150px;
+    height: 150px;
+}
+
+.planetSpecificateLtrDescs::after {
+    position: absolute;
+    top: 0;
+    left: -7%;
+    width: 2px;
+    height: 100%;
+    background-color: #01cd74;
+    content: '';
+}
+
+.planetSpecificateLtrDescs::before {
+    content: "";
+    position: absolute;
+    left: -7%;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #01cd74;
+    border-bottom: 15px solid transparent;
+}
+
+@media screen and (min-width: 1200px) {
+    .planetSpecificateLtrImage {
+        margin-right: 90px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .planetSpecificateLtrDescs {
+        max-width: 690px;
+    }
+    .planetSpecificateLtrImage {
+        margin-right: 60px;
+        width: 135px;
+        height: 135px;
+    }
+    .planetSpecificateLtrDescs::after,
+    .planetSpecificateLtrDescs::before {
+        left: -5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .planetSpecificateLtrDescs {
+        max-width: 450px;
+    }
+    .planetSpecificateLtrImage {
+        width: 135px;
+        height: 135px;
+    }
+    .planetSpecificateLtrDescs::after,
+    .planetSpecificateLtrDescs::before {
+        left: -9%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .planetSpecificationLtrMainBox {
+        border-radius: 20%;
+        background-image: url('../../../assets/images/backgrounds/background.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .planetSpecificateLtrDescs {
+        margin-right: -11%;
+        max-width: 400px;
+    }
+    .planetSpecificateLtrImage {
+        margin-left: -13%;
+        width: 115px;
+        height: 115px;
+    }
+    .planetSpecificateLtrDescs::after,
+    .planetSpecificateLtrDescs::before {
+        left: -10%;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .planetSpecificationLtrMainBox {
+        height: auto;
+    }
+    .planetSpecificateLtrBox {
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .planetSpecificateLtrImage {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+    .planetSpecificateLtrDescs {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 450px;
+    }
+    .planetSpecificateLtrDescs::after {
+        top: -9%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #01cd74;
+    }
+    .planetSpecificateLtrDescs::before {
+        left: 85%;
+        top: -9%;
+        border-left: 15px solid transparent;
+        border-top: 30px solid #01cd74;
+        border-right: 15px solid transparent;
+    }
+}

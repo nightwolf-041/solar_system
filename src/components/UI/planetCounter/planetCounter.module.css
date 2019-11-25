@@ -1,0 +1,306 @@
+.planetCounterBox {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('../../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.planetCounterbackground {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('../../../assets/images/backgrounds/counter-bg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.planetCounterSvg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.planetCounterSvg2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.planetCounterMainHolder {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countersHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    max-width: 2000px;
+}
+
+.planetCounterDistanceBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.planetCounterDistanceBox img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.planetCounterDistanceBox h4 {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(44, 41, 41, 0.589);
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.planetCounterDistanceBox p {
+    font-size: 14px;
+    color: #000000;
+    background-color: #ed1d16be;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.distanceCounter {
+    padding-right: 5px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.planetCounterGravityBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.planetCounterGravityBox img {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.planetCounterGravityBox h4 {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(44, 41, 41, 0.589);
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.planetCounterGravityBox p {
+    font-size: 14px;
+    color: #000000;
+    background-color: #ed1d16cb;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.gravityCounter {
+    padding-right: 5px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.planetCounterTemperatureBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.planetCounterTemperatureBox img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.planetCounterTemperatureBox h4 {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(44, 41, 41, 0.589);
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.planetCounterTemperatureBox p {
+    font-size: 14px;
+    color: #000000;
+    background-color: #388fd1f1;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.tempratureCounter {
+    padding-right: 5px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.planetCounterMovementBox {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+
+.planetCounterMovementBox img {
+    width: 90px;
+    height: 100px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.planetCounterMovementBox h4 {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(44, 41, 41, 0.589);
+    padding: 7px;
+    border-radius: 40px;
+}
+
+.planetCounterMovementBox p {
+    font-size: 14px;
+    color: #000000;
+    background-color: #388fd1ef;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.movementCounter {
+    padding-right: 5px;
+    font-size: 17px;
+    color: #fff;
+}
+
+@media screen and (min-width: 1700px) {
+    .countersHolder {
+        left: -10%;
+        width: 122%;
+        max-width: 2000px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .countersHolder {
+        left: -13%;
+        width: 128%;
+        max-width: 2000px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .countersHolder {
+        top: 30%;
+    }
+    .planetCounterDistanceBox img,
+    .planetCounterGravityBox img,
+    .planetCounterTemperatureBox img,
+    .planetCounterMovementBox img {
+        width: 80px;
+        height: 80px;
+    }
+    .planetCounterDistanceBox h4,
+    .planetCounterGravityBox h4,
+    .planetCounterTemperatureBox h4,
+    .planetCounterMovementBox h4 {
+        font-size: 18px;
+    }
+    .planetCounterDistanceBox p,
+    .planetCounterGravityBox p,
+    .planetCounterTemperatureBox p,
+    .planetCounterMovementBox p {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .planetCounterbackground {
+        height: 500px;
+    }
+    .countersHolder {
+        flex-wrap: wrap;
+    }
+    .planetCounterDistanceBox,
+    .planetCounterGravityBox,
+    .planetCounterTemperatureBox,
+    .planetCounterMovementBox {
+        width: 250px;
+    }
+    .planetCounterDistanceBox img,
+    .planetCounterGravityBox img,
+    .planetCounterTemperatureBox img,
+    .planetCounterMovementBox img {
+        width: 75px;
+        height: 75px;
+    }
+    .planetCounterDistanceBox h4,
+    .planetCounterGravityBox h4,
+    .planetCounterTemperatureBox h4,
+    .planetCounterMovementBox h4 {
+        font-size: 17px;
+    }
+    .planetCounterDistanceBox p,
+    .planetCounterGravityBox p,
+    .planetCounterTemperatureBox p,
+    .planetCounterMovementBox p {
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width: 529px) {
+    .planetCounterDistanceBox,
+    .planetCounterGravityBox,
+    .planetCounterTemperatureBox,
+    .planetCounterMovementBox {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .planetCounterDistanceBox,
+    .planetCounterGravityBox,
+    .planetCounterTemperatureBox,
+    .planetCounterMovementBox {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 329px) {
+    .planetCounterbackground {
+        height: 800px;
+    }
+    .planetCounterDistanceBox,
+    .planetCounterGravityBox,
+    .planetCounterTemperatureBox,
+    .planetCounterMovementBox {
+        width: 350px;
+    }
+    .planetCounterBox,
+    .planetCounterbackground {
+        height: 830px;
+    }
+}

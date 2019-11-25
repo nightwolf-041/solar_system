@@ -1,0 +1,171 @@
+.sunMain {
+    position: relative;
+    background-image: url('../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sunCircleImage {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    width: 120%;
+    height: 650px;
+}
+
+.sunHeadingBox {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 680px;
+    background-color: #000;
+    background-blend-mode: hard-light;
+    background-image: url('../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sunHeaderDiv {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sunHeader {
+    position: relative;
+    color: #fde460;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+.sunHeader::after {
+    position: absolute;
+    top: 50%;
+    right: -220%;
+    width: 300px;
+    height: 4px;
+    border-top: 1px #fde460 solid;
+    border-bottom: 1px #fde460 solid;
+    content: '';
+}
+
+.sunHeader::before {
+    position: absolute;
+    top: 50%;
+    left: -220%;
+    width: 300px;
+    height: 4px;
+    border-top: 1px #fde460 solid;
+    border-bottom: 1px #fde460 solid;
+    content: '';
+}
+
+.containerBack {
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: #000;
+    background-blend-mode: hard-light;
+    background-image: url('../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+    .menuIcon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menuIcon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .menuIcon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .sunCircleImage {
+        width: 145%;
+        top: -25%;
+        right: -10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sunCircleImage {
+        top: -25%;
+        width: 150%;
+        right: -15%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sunCircleImage {
+        top: -25%;
+        width: 180%;
+        right: -25%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 800px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1500px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 2000px !important;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .menuIcon {
+        right: auto
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .sunCircleImage {
+        width: 105%;
+    }
+}

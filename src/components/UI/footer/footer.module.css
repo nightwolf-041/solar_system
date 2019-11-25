@@ -1,0 +1,228 @@
+    .footerMain {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background-image: url('../../../assets/images/backgrounds/footer-bg.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .footerHeader {
+        position: absolute;
+        top: 7%;
+        right: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .footerHeaderTitle {
+        direction: rtl;
+        color: #fdbd10;
+        font-weight: bold;
+        padding-bottom: 12px;
+    }
+    
+    .footerHeaderDesc {
+        color: #fff;
+    }
+    
+    .footerHeaderSubdesc {
+        color: #fff;
+    }
+    
+    .footerContain {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .footerContainTop,
+    .footerContainMiddle,
+    .footerContainBottom {
+        direction: rtl;
+        text-align: right;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    
+    .footerContainerBox {
+        position: relative;
+        width: 100%;
+        height: 350px;
+    }
+    
+    .footerContactUs {
+        position: absolute;
+        bottom: 8%;
+        left: 5%;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footerContactUsItems {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+    }
+    
+    .footerLogo {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .footerNasaLogo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 50px;
+    }
+    
+    .footerSpaceRLogo {
+        width: 150px;
+        height: 160px;
+    }
+    
+    @media screen and (min-width: 1900px) {
+        .footerContain {
+            right: 10%
+        }
+        .footerContactUs {
+            left: 12%
+        }
+    }
+    
+    @media screen and (min-width: 2000px) {
+        .footerContain {
+            right: 15%
+        }
+        .footerContactUs {
+            left: 17%
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .footerContain {
+            right: 2%
+        }
+        .footerContactUs {
+            left: 2%
+        }
+        .footerContainTop,
+        .footerContainMiddle,
+        .footerContainBottom {
+            font-size: 17px;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        .footerContain {
+            top: 30%;
+            right: 2%
+        }
+        .footerContactUs {
+            left: 2%
+        }
+        .footerContainTop,
+        .footerContainMiddle,
+        .footerContainBottom {
+            font-size: 16px;
+        }
+        .footerNasaLogo {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    
+    @media screen and (max-width: 650px) {
+        .footerMain {
+            height: 550px;
+        }
+        .footerContain {
+            top: 88%;
+            right: 2%
+        }
+        .footerContactUs {
+            bottom: -40%;
+            left: 2%
+        }
+        .footerContainTop,
+        .footerContainMiddle,
+        .footerContainBottom {
+            font-size: 16px;
+        }
+        .footerNasaLogo {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        .footerContain {
+            top: 30%;
+            right: 2%
+        }
+        .footerContactUs {
+            left: 2%
+        }
+        .footerContainTop,
+        .footerContainMiddle,
+        .footerContainBottom {
+            font-size: 16px;
+            text-align: center;
+        }
+        .footerNasaLogo {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .footerMain {
+            height: 700px;
+        }
+        .footerContain {
+            top: 100%;
+            right: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            width: 210px;
+            justify-items: center;
+        }
+        .footerHeaderTitle {
+            font-size: 18px;
+        }
+        .footerContactUs {
+            bottom: -90%;
+            left: 2%
+        }
+        .footerContainTop,
+        .footerContainMiddle,
+        .footerContainBottom {
+            font-size: 16px;
+        }
+        .footerNasaLogo {
+            width: 60px;
+            height: 60px;
+            margin-left: 78px;
+        }
+    }

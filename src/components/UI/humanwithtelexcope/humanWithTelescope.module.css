@@ -1,0 +1,51 @@
+.humanwithtelexcopeBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    background-color: #000;
+    background-blend-mode: hard-light;
+    background-image: url('../../../assets/images/backgrounds/background.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.humanwithtelexcopeIcon {
+    width: 400px;
+    height: 350px;
+}
+
+@media screen and (min-width: 1025px) {
+    .humanwithtelexcopeIcon {
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .humanwithtelexcopeBox {
+        margin-top: -30px;
+    }
+    .humanwithtelexcopeIcon {
+        width: 320px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .humanwithtelexcopeIcon {
+        width: 270px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .humanwithtelexcopeIcon {
+        width: 200px;
+        height: 180px;
+    }
+}

@@ -1,0 +1,141 @@
+.notFoundMain {
+    position: relative;
+    height: 900px;
+    background-color: #b71c1c;
+    animation: mainBackground 3s infinite alternate;
+    -webkit-animation: mainBackground 3s infinite alternate;
+    -moz-animation: mainBackground 3s infinite alternate;
+    -o-animation: mainBackground 3s infinite alternate;
+}
+
+@keyframes mainBackground {
+    0% {
+        background-color: #b71c1c;
+    }
+    100% {
+        background-color: #1A237E;
+    }
+}
+
+@-webkit-keyframes mainBackground {
+    0% {
+        background-color: #b71c1c;
+    }
+    100% {
+        background-color: #1A237E;
+    }
+}
+
+@-moz-keyframes mainBackground {
+    0% {
+        background-color: #b71c1c;
+    }
+    100% {
+        background-color: #1A237E;
+    }
+}
+
+@-o-keyframes mainBackground {
+    0% {
+        background-color: #b71c1c;
+    }
+    100% {
+        background-color: #1A237E;
+    }
+}
+
+.notFoundBox {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.notFoundTitle {
+    height: 280px;
+    position: relative;
+}
+
+.notFoundTitle h1 {
+    position: absolute;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 230px;
+    font-weight: 900;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    background: url('../../assets/images/backgrounds/notFound-bg.jpg') no-repeat;
+    background-clip: text;
+    -moz-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.notFoundBox h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.notFoundBox p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.notFounLink {
+    font-size: 14px;
+    text-decoration: none;
+    background: none;
+    padding: 8px 15px;
+    color: #fff;
+    border: 1px solid #00BCD4;
+    transition: 0.4s background-color ease;
+}
+
+.notFounLink:hover {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    background-color: #00BCD4;
+}
+
+@media only screen and (max-width: 767px) {
+    .notFoundTitle {
+        height: 142px;
+    }
+    .notFoundTitle h1 {
+        font-size: 112px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .notFoundBox {
+        top: 30%;
+        width: 87%;
+    }
+    .notFoundTitle {
+        height: 110px;
+    }
+    .notFoundTitle h1 {
+        font-size: 75px;
+    }
+    .notFoundBox h2 {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,123 @@
+.earthMain {
+    position: relative;
+    background-image: url('../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.earthCircle {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    width: 120%;
+    height: 650px;
+}
+
+.earthHeadingBox {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 680px;
+    background-color: #000;
+    background-blend-mode: hard-light;
+    background-image: url('../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.earthHeaderDiv {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earthHeader {
+    position: relative;
+    color: #00bce4;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+.earthHeader::after {
+    position: absolute;
+    top: 50%;
+    right: -360%;
+    width: 300px;
+    height: 4px;
+    border-top: 1px #8db9ca solid;
+    border-bottom: 1px #8db9ca solid;
+    content: '';
+}
+
+.earthHeader::before {
+    position: absolute;
+    top: 50%;
+    left: -360%;
+    width: 300px;
+    height: 4px;
+    border-top: 1px #8db9ca solid;
+    border-bottom: 1px #8db9ca solid;
+    content: '';
+}
+
+.menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.containerBack {
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    background-color: #000;
+    background-blend-mode: hard-light;
+    background-image: url('../../assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .menuIcon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menuIcon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .menuIcon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1740px !important;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .menuIcon {
+        right: auto
+    }
+}

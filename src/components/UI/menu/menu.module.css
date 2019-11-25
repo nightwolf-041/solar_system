@@ -1,0 +1,335 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 1000px;
+    background-color: #00112c;
+    overflow: hidden;
+    z-index: 15;
+    transition: width 0.3s cubic-bezier(.57, .21, .69, 1.25);
+    -webkit-transition: width 0.3s cubic-bezier(.57, .21, .69, 1.25);
+    -moz-transition: width 0.3s cubic-bezier(.57, .21, .69, 1.25);
+    -o-transition: width 0.3s cubic-bezier(.57, .21, .69, 1.25);
+}
+
+.menuCollapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 1000px;
+    background-color: #00112c;
+    overflow: hidden;
+    z-index: 15;
+    transition: width 0.5s cubic-bezier(.32, 2, .55, .27);
+    -webkit-transition: width 0.5s cubic-bezier(.32, 2, .55, .27);
+    -moz-transition: width 0.5s cubic-bezier(.32, 2, .55, .27);
+    -o-transition: width 0.5s cubic-bezier(.32, 2, .55, .27);
+}
+
+.menuHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-image: '../../assets/images/backgrounds/liner-solar-blue.jpg';
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuClose {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menuHeaderImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menuProducBox {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuProductLink {
+    color: #0099e5;
+    font-size: 20px;
+}
+
+.menuProductLink:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.1s font-size ease;
+}
+
+.mainMenuLoginLink {
+    position: absolute;
+    top: 8%;
+    right: 17%;
+    z-index: 1;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 7px 14px;
+    outline: none;
+    border: none;
+    border-radius: 31% 69% 41% 59% / 51% 30% 70% 49%;
+    transition: 0.1s border-radius ease;
+    -webkit-transition: 0.1s border-radius ease;
+    -moz-transition: 0.1s border-radius ease;
+    -o-transition: 0.1s border-radius ease;
+}
+
+.mainMenuLoginLink:hover {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 45% 24% 49% 48% / 33% 47% 33% 34%;
+}
+
+.mainMenuLogOutButton {
+    position: absolute;
+    top: 8%;
+    right: 17%;
+    z-index: 1;
+    background-color: #992a2a;
+    color: #fff;
+    padding: 7px 14px;
+    outline: none;
+    border: none;
+    border-radius: 40% 13% 56% 44% / 35% 59% 39% 24%;
+    transition: 0.1s border-radius ease;
+    -webkit-transition: 0.1s border-radius ease;
+    -moz-transition: 0.1s border-radius ease;
+    -o-transition: 0.1s border-radius ease;
+}
+
+.mainMenuLogOutButton:hover {
+    border-radius: 30% 70% 55% 45% / 53% 30% 70% 47%;
+}
+
+.mainMenuAboutUsLink {
+    position: absolute;
+    top: 8%;
+    left: 17%;
+    z-index: 1;
+    background-color: #0D47A1;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 65% 10% 54% 26% / 41% 43% 36% 10%;
+    transition: 0.1s border-radius ease;
+    -webkit-transition: 0.1s border-radius ease;
+    -moz-transition: 0.1s border-radius ease;
+    -o-transition: 0.1s border-radius ease;
+}
+
+.mainMenuAboutUsLink:hover {
+    text-decoration: none;
+    border-radius: 10%;
+    color: #fff;
+}
+
+.menuSunLogoBox,
+.menuMercuryLogoBox,
+.menuVenusLogoBox,
+.menuEarthLogoBox,
+.menuMarsLogoBox,
+.menuJupiterLogoBox,
+.menuSaturnLogoBox,
+.menuUranusLogoBox,
+.menuNeptuneLogoBox {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.menuSunLogoBox {
+    top: 22%;
+}
+
+.menuMercuryLogoBox {
+    top: 28%;
+}
+
+.menuVenusLogoBox {
+    top: 34%;
+}
+
+.menuEarthLogoBox {
+    top: 40%;
+}
+
+.menuMarsLogoBox {
+    top: 46%;
+}
+
+.menuJupiterLogoBox {
+    top: 52%;
+}
+
+.menuSaturnLogoBox {
+    top: 58%;
+}
+
+.menuUranusLogoBox {
+    top: 64%;
+}
+
+.menuNeptuneLogoBox {
+    top: 70%;
+}
+
+.menuSunLogoBox:hover .menuSunLogo,
+.menuMercuryLogoBox:hover .menuMercuryLogo,
+.menuVenusLogoBox:hover .menuVenusLogo,
+.menuEarthLogoBox:hover .menuEarthLogo,
+.menuMarsLogoBox:hover .menuMarsLogo,
+.menuJupiterLogoBox:hover .menuJupiterLogo,
+.menuSaturnLogoBox:hover .menuSaturnLogo,
+.menuUranusLogoBox:hover .menuUranusLogo,
+.menuNeptuneLogoBox:hover .menuNeptuneLogo {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    transition: 0.5s all ease;
+}
+
+.menuSunLogoBox:hover .menuSunLink,
+.menuMercuryLogoBox:hover .menuMercuryLink,
+.menuVenusLogoBox:hover .menuVenusLink,
+.menuEarthLogoBox:hover .menuEarthLink,
+.menuMarsLogoBox:hover .menuMarsLink,
+.menuJupiterLogoBox:hover .menuJupiterLink,
+.menuSaturnLogoBox:hover .menuSaturnLink,
+.menuUranusLogoBox:hover .menuUranusLink,
+.menuNeptuneLogoBox:hover .menuNeptuneLink {
+    transform: scaleY(1.2);
+    -webkit-transform: scaleY(1.2);
+    -moz-transform: scaleY(1.2);
+    -o-transform: scaleY(1.2);
+    transform: scaleX(1.2);
+    -webkit-transform: scaleX(1.2);
+    -moz-transform: scaleX(1.2);
+    -o-transform: scaleX(1.2);
+}
+
+.menuSunLogo,
+.menuMercuryLogo,
+.menuVenusLogo,
+.menuEarthLogo,
+.menuMarsLogo,
+.menuJupiterLogo,
+.menuUranusLogo,
+.menuNeptuneLogo {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.menuSaturnLogo {
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.menuSunLink,
+.menuMercuryLink,
+.menuVenusLink,
+.menuEarthLink,
+.menuMarsLink,
+.menuJupiterLink,
+.menuSaturnLink,
+.menuUranusLink,
+.menuNeptuneLink {
+    color: #fff;
+    font-size: 16px;
+}
+
+.menuSunLink:hover,
+.menuMercuryLink:hover,
+.menuVenusLink:hover,
+.menuEarthLink:hover,
+.menuMarsLink:hover,
+.menuJupiterLink:hover,
+.menuSaturnLink:hover,
+.menuUranusLink:hover,
+.menuNeptuneLink:hover {
+    text-decoration: none;
+}
+
+.menuFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.menuVector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.solarLogo {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* media queries ///////////////////// */
+
+@media only screen and (max-width: 450px) {
+    .menu,
+    .menuCollapse {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .menuCollapse {
+        width: 260px;
+    }
+    .solarLogo {
+        left: 31%;
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+    .menu {
+        max-width: 2200px;
+        right: auto;
+    }
+    .menuCollapse {
+        max-width: 2200px;
+        right: auto;
+    }
+}

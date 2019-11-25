@@ -1,0 +1,124 @@
+.modalMain {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    z-index: 45;
+    background-color: #fff;
+    box-shadow: 2px 7px 40px rgba(0, 0, 0);
+}
+
+.menuCloserIcon {
+    position: absolute;
+    top: -1%;
+    left: 2%;
+    font-size: 35px;
+    color: red;
+    cursor: pointer;
+}
+
+.modalTitle {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #444;
+}
+
+.modalForm {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+
+.modalFullnameInput,
+.modalPhonenumberInput,
+.addressinputInput {
+    width: 85%;
+    margin-bottom: 13px;
+    direction: rtl;
+    border: none;
+    background-color: #fff;
+    padding: 6px 6px;
+    border: 2px solid #90CAF9;
+    border-radius: 5px;
+}
+
+.modalFullnameInputInvalid,
+.modalPhonenumberInputInvalid,
+.addressinputInputInvalid {
+    width: 85%;
+    margin-bottom: 13px;
+    direction: rtl;
+    border: none;
+    background-color: #ffcdd2;
+    padding: 6px 6px;
+    border-radius: 5px;
+}
+
+.addressinputInput,
+.addressinputInputInvalid {
+    resize: none;
+    height: 100px;
+}
+
+.fullnameErrorSpan,
+.phonenumberErrorSpan,
+.addressErrorSpan {
+    margin-top: -7px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #f44336;
+    width: 94%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalSubmit {
+    margin-top: 8px;
+    padding: 7px 40px;
+    color: #fff;
+    /* background-color: #0D47A1; */
+    background-color: #4CAF50;
+    border: none;
+    transition: 0.4s background-color ease;
+    -webkit-transition: 0.4s background-color ease;
+    -moz-transition: 0.4s background-color ease;
+    -o-transition: 0.4s background-color ease;
+}
+
+.modalSubmit:hover {
+    /* background-color: #1A237E; */
+    background-color: #2E7D32;
+}
+
+.modalFailAlet {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    background-color: #f44336;
+    color: #f5f5f5;
+    z-index: 45;
+    font-size: 28px;
+}

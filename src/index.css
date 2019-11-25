@@ -1,0 +1,20 @@
+@import './assets/fonts/font-face.css';
+html {
+    max-width: 2200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+body {
+    margin: 0 auto;
+    height: 900px;
+    font-family: Vazir !important;
+    background-image: url('./assets/images/backgrounds/background.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
