@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './sun.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -38,9 +37,7 @@ const Sun = (props) => {
             <BottomMenu />
 
             <div className={classes.sunHeadingBox}>
-                <LazyLoad>
                     <img src={sunCircleImage} alt="sun" className={classes.sunCircleImage} />
-                </LazyLoad>
                 <div className={classes.sunHeaderDiv}>
                     <h1 className={classes.sunHeader}>خورشید</h1>
                 </div>

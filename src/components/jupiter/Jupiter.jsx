@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import LazyLoad from 'react-lazy-load';
 import classes from './jupiter.module.css'
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
@@ -37,9 +36,7 @@ const Jupiter = (props) => {
             <BottomMenu />
 
             <div className={classes.jupiterHeadingBox}>
-                <LazyLoad>
                     <img src={jupiterCircleImage} alt="jupiter" className={classes.jupiterCircle} />
-                </LazyLoad>
                 <div className={classes.jupiterHeaderDiv}>
                     <h1 className={classes.jupiterHeader}>مشتری</h1>
                 </div>

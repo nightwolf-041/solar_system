@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './uranus.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -37,9 +36,7 @@ const Uranus = (props) => {
             <BottomMenu />
 
             <div className={classes.uranusHeadingBox}>
-                <LazyLoad>
                     <img src={uranusCircleImage} alt="uranus" className={classes.uranusCircle} />
-                </LazyLoad>
                 <div className={classes.uranusHeaderDiv}>
                     <h1 className={classes.uranusHeader}>اورانوس</h1>
                 </div>

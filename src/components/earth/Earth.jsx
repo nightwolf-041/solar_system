@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import LazyLoad from 'react-lazy-load';
 import classes from './earth.module.css'
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
@@ -38,9 +37,7 @@ const Earth = (props) => {
             <BottomMenu />
 
             <div className={classes.earthHeadingBox}>
-                <LazyLoad>
                     <img src={earthCircleImage} alt="earth" className={classes.earthCircle} />
-                </LazyLoad>
                 <div className={classes.earthHeaderDiv}>
                     <h1 className={classes.earthHeader}>زمین</h1>
                 </div>

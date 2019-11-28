@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './neptune.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -37,9 +36,7 @@ const Neptune = (props) => {
             <BottomMenu />
 
             <div className={classes.neptuneHeadingBox}>
-                <LazyLoad>
                     <img src={neptuneCircleImage} alt="neptune" className={classes.neptuneCircle} />
-                </LazyLoad>
                 <div className={classes.neptuneHeaderDiv}>
                     <h1 className={classes.neptuneHeader}>نپتون</h1>
                 </div>

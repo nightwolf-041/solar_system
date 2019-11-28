@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './saturn.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -37,9 +36,7 @@ const Saturn = (props) => {
             <BottomMenu />
 
             <div className={classes.saturnHeadingBox}>
-                <LazyLoad>
                     <img src={saturnCircleImage} alt="saturn" className={classes.saturnCircle} />
-                </LazyLoad>
                 <div className={classes.saturnHeaderDiv}>
                     <h1 className={classes.saturnHeader}>زحل</h1>
                 </div>

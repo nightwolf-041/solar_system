@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './mars.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -37,9 +36,7 @@ const Mars = (props) => {
             <BottomMenu />
 
             <div className={classes.marsHeadingBox}>
-                <LazyLoad>
                     <img src={marsCircleImage} alt="mars" className={classes.marsCircle} />
-                </LazyLoad>
                 <div className={classes.marsHeaderDiv}>
                     <h1 className={classes.marsHeader}>مریخ</h1>
                 </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './mercury.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -37,9 +36,7 @@ const Mercury = (props) => {
             <BottomMenu />
 
             <div className={classes.mercuryHeadingBox}>
-                <LazyLoad>
                     <img src={mercuryCircleImage} alt="mercury" className={classes.mercuryCircle} />
-                </LazyLoad>
                 <div className={classes.mercuryHeaderDiv}>
                     <h1 className={classes.mercuryHeader}>عطارد</h1>
                 </div>

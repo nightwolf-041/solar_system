@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classes from './venus.module.css'
-import LazyLoad from 'react-lazy-load';
 import Specification from '../../components/UI/planetsSpecificate/Specification'
 import SpecificationLtr from '../../components/UI/planetsSpecificate/SpecificationLtr'
 import Backdrop from '../../components/UI/backdrop/Backdrop'
@@ -37,9 +36,7 @@ const Venus = (props) => {
             <BottomMenu />
 
             <div className={classes.venusHeadingBox}>
-                <LazyLoad>
                     <img src={venusCircleImage} alt="venus" className={classes.venusCircle} />
-                </LazyLoad>
                 <div className={classes.venusHeaderDiv}>
                     <h1 className={classes.venusHeader}>زهره</h1>
                 </div>
